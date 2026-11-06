@@ -1,0 +1,86 @@
+{
+  "source_map": "https://map.byu.edu/scripts/main.js",
+  "coordinate_method": "WGS84 geometry bounding-box center; not an entrance",
+  "buildings": [
+    {
+      "building_code": "JRCB",
+      "name": "J. Reuben Clark Law Building",
+      "latitude": 40.249485,
+      "longitude": -111.645283,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/6",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "LSB",
+      "name": "Life Sciences Building",
+      "latitude": 40.245018,
+      "longitude": -111.649325,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/8",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "JFSB",
+      "name": "Joseph F. Smith Building",
+      "latitude": 40.248441,
+      "longitude": -111.651197,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/15",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "JKB",
+      "name": "Jesse Knight Building",
+      "latitude": 40.249958,
+      "longitude": -111.650332,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/60",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "JSB",
+      "name": "Joseph Smith Building",
+      "latitude": 40.245876,
+      "longitude": -111.651599,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/73",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "ESC",
+      "name": "Eyring Science Center",
+      "latitude": 40.247166,
+      "longitude": -111.650241,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/74",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "WSC",
+      "name": "Wilkinson Student Center",
+      "latitude": 40.248591,
+      "longitude": -111.647346,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/80",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "HBLL",
+      "name": "Harold B. Lee Library",
+      "latitude": 40.249035,
+      "longitude": -111.649239,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/81",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "TNRB",
+      "name": "Tanner Building",
+      "latitude": 40.250444,
+      "longitude": -111.652516,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/82",
+      "verified_on": "2026-11-04"
+    },
+    {
+      "building_code": "MARB",
+      "name": "Martin Building",
+      "latitude": 40.246832,
+      "longitude": -111.649216,
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/BYU_Campus_Buildings/FeatureServer/0/85",
+      "verified_on": "2026-11-04"
+    }
+  ]
+}

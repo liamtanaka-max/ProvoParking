@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Provo Parking: find BYU and Provo parking areas that fit your permit, read the rules, start a parking timer, and save favorites.">
+  <title>Provo Parking</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <p id="loading" class="app-loading" role="status">Loading…</p>
+
+  <!-- Sign up / log in: shown first until someone signs in or continues as a guest -->
+  <section id="auth-screen" class="auth" aria-labelledby="auth-title" hidden>
+    <div class="auth-brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <rect x="2" y="2" width="28" height="28" rx="8" fill="currentColor"/>
+        <path d="M12 23V9h5.2a4.4 4.4 0 0 1 0 8.8H12" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Provo Parking</span>
+    </div>
+
+    <div class="auth-card">
+      <p class="auth-eyebrow" id="auth-eyebrow">Please enter your details</p>
+      <h2 id="auth-title">Welcome back</h2>
+      <p id="auth-msg" class="auth-msg" role="status" aria-live="polite" hidden></p>
+
+      <!-- Sign up: one screen. "Create account" makes the account right away, so problems show here. -->
+      <form id="signup-form" class="auth-form" novalidate hidden>
+        <button type="button" class="google-btn" id="google-signup" hidden>
+          <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          <span>Continue with Google</span>
+        </button>
+        <p class="auth-or" hidden><span>or</span></p>
+        <div class="field">
+          <label class="visually-hidden" for="su-email">Email address</label>
+          <input id="su-email" type="email" autocomplete="email" required placeholder="Email address">
+          <p class="field-error" id="su-email-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label class="visually-hidden" for="su-password">Password</label>
+          <div class="pw-wrap">
+            <input id="su-password" type="password" autocomplete="new-password" minlength="8" maxlength="72" required placeholder="Create a password (8+ characters)">
+            <button type="button" class="pw-toggle" data-for="su-password" aria-label="Show password">Show</button>
+          </div>
+          <p class="field-error" id="su-password-err" role="alert"></p>
+        </div>
+        <button type="submit" class="auth-submit" id="su-submit">Create account</button>
+        <p class="auth-switch">Already have an account? <button type="button" class="auth-link" data-auth-go="login">Log in</button></p>
+        <p class="auth-switch subtle"><button type="button" class="auth-link quiet" data-auth-go="guest">Continue as guest</button></p>
+      </form>
+
+      <!-- After a new account is created: optional permit, with Skip -->
+      <form id="permit-form" class="auth-form" novalidate hidden>
+        <div class="field">
+          <label for="permit-search">Search for your permit</label>
+          <div class="combo">
+            <svg class="combo-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input id="permit-search" type="text" role="combobox" autocomplete="off"
+                   aria-expanded="false" aria-controls="permit-options" aria-autocomplete="list"
+                   placeholder="e.g. Y or graduate">
+            <button type="button" class="combo-toggle" id="permit-toggle" aria-label="Show all permits" tabindex="-1">
+              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <ul id="permit-options" class="combo-list" role="listbox" aria-label="Permits" hidden></ul>
+          </div>
+          <ul id="permit-chips" class="chips" aria-label="Selected permits"></ul>
+          <p class="auth-hint">We use this to show where you can park. Have more than one? Add each.</p>
+          <p class="field-error" id="permit-search-err" role="alert"></p>
+        </div>
+        <button type="submit" class="auth-submit" id="permit-submit">Save and continue</button>
+        <p class="auth-switch"><button type="button" class="auth-link quiet" id="permit-skip">I don't have a permit / skip</button></p>
+      </form>
+
+      <!-- Log in -->
+      <form id="login-form" class="auth-form" novalidate hidden>
+        <button type="button" class="google-btn" id="google-login" hidden>
+          <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-7.9l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          <span>Continue with Google</span>
+        </button>
+        <p class="auth-or" hidden><span>or</span></p>
+        <div class="field">
+          <label class="visually-hidden" for="li-email">Email address</label>
+          <input id="li-email" type="email" autocomplete="email" required placeholder="Email address">
+          <p class="field-error" id="li-email-err" role="alert"></p>
+        </div>
+        <div class="field">
+          <label class="visually-hidden" for="li-password">Password</label>
+          <div class="pw-wrap">
+            <input id="li-password" type="password" autocomplete="current-password" required placeholder="Password">
+            <button type="button" class="pw-toggle" data-for="li-password" aria-label="Show password">Show</button>
+          </div>
+          <p class="field-error" id="li-password-err" role="alert"></p>
+        </div>
+        <div class="auth-row">
+          <label class="check"><input type="checkbox" id="li-remember" checked> Keep me signed in</label>
+          <button type="button" class="auth-link" data-auth-go="forgot">Forgot password</button>
+        </div>
+        <button type="submit" class="auth-submit" id="li-submit">Log in</button>
+        <p class="auth-switch">Don't have an account? <button type="button" class="auth-link" data-auth-go="signup">Sign up</button></p>
+        <p class="auth-switch subtle"><button type="button" class="auth-link quiet" data-auth-go="guest">Continue as guest</button></p>
+        <!-- Team admins only; kept off the sign-up and permit screens drivers see first -->
+        <p class="auth-switch subtle"><a class="auth-link quiet" href="admin.html">Admin sign in</a></p>
+      </form>
+
+      <!-- Forgot password -->
+      <form id="forgot-form" class="auth-form" novalidate hidden>
+        <div class="field">
+          <label class="visually-hidden" for="fp-email">Email address</label>
+          <input id="fp-email" type="email" autocomplete="email" required placeholder="Email address">
+          <p class="field-error" id="fp-email-err"></p>
+        </div>
+        <button type="submit" class="auth-submit" id="fp-submit">Send reset link</button>
+        <p class="auth-switch"><button type="button" class="auth-link" data-auth-go="login">← Back to log in</button></p>
+      </form>
+
+      <!-- Choose a new password (after opening the reset email link) -->
+      <form id="newpass-form" class="auth-form" novalidate hidden>
+        <div class="field">
+          <label class="visually-hidden" for="np-password">New password</label>
+          <div class="pw-wrap">
+            <input id="np-password" type="password" autocomplete="new-password" minlength="8" maxlength="72" required placeholder="New password (8+ characters)">
+            <button type="button" class="pw-toggle" data-for="np-password" aria-label="Show password">Show</button>
+          </div>
+          <p class="field-error" id="np-password-err"></p>
+        </div>
+        <button type="submit" class="auth-submit" id="np-submit">Save new password</button>
+      </form>
+    </div>
+  </section>
+
+  <header class="top" id="app-header" hidden>
+    <h1><a href="#areas" class="home-link"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect x="2" y="2" width="28" height="28" rx="8" fill="currentColor"/><path d="M12 23V9h5.2a4.4 4.4 0 0 1 0 8.8H12" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Provo Parking</a></h1>
+    <nav class="tabs" id="app-nav" aria-label="Screens" hidden>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="tab-list" aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="tab-list" id="tab-list">
+        <button type="button" class="tab" id="tab-find" data-view="find">Find</button>
+        <button type="button" class="tab" id="tab-areas" data-view="areas">Areas</button>
+        <button type="button" class="tab" id="tab-favorites" data-view="favorites">
+          Favorites <span class="badge" id="fav-count" aria-label="favorites saved">0</span>
+        </button>
+        <button type="button" class="tab" id="tab-car" data-view="car">My car</button>
+        <button type="button" class="tab" id="tab-help" data-view="help">Help</button>
+      </div>
+    </nav>
+    <div class="account-bar">
+      <span id="account-name" class="account-name"></span>
+      <button type="button" id="account-action" class="account-action"></button>
+    </div>
+  </header>
+
+  <main id="app-main" hidden>
+    <p id="status" class="status" role="status" aria-live="polite">Loading parking areas…</p>
+
+    <!-- Screen 1: Find — pick permit + arrival time -->
+    <section id="view-find" aria-labelledby="h-find" hidden>
+      <h2 id="h-find" tabindex="-1">Find parking</h2>
+      <form id="find-form" class="panel">
+        <label for="permit-select">Your permit</label>
+        <select id="permit-select"></select>
+        <p id="permit-info" class="hint"></p>
+        <label for="find-destination">Where are you going?</label>
+        <select id="find-destination" required aria-describedby="destination-hint"></select>
+        <p id="destination-hint" class="hint">Choose your BYU building. We save it with your parking timer to measure how close you parked.</p>
+        <label class="check"><input type="checkbox" id="arrive-now" checked> Parking right now (Provo time)</label>
+        <p class="hint">Updates automatically as lot rules change. Uncheck to plan a different arrival day and time.</p>
+
+        <div class="row">
+          <div>
+            <label for="arrive-day">Arrival day</label>
+            <select id="arrive-day" disabled>
+              <option value="0">Sunday</option><option value="1">Monday</option><option value="2">Tuesday</option>
+              <option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option>
+              <option value="6">Saturday</option>
+            </select>
+          </div>
+          <div>
+            <label for="arrive-time">Arrival time</label>
+            <input type="time" id="arrive-time" required disabled>
+          </div>
+        </div>
+        <p class="hint">Results compare your selection with listed rules. Your BYU registration and actual eligibility are not verified.</p>
+        <button type="submit" class="primary">Show parking areas</button>
+      </form>
+    </section>
+
+    <!-- Screen 2: Areas (home) — full-screen map, permit chip, location button, pull-up list -->
+    <section id="view-areas" class="home" aria-labelledby="h-areas" hidden>
+      <h2 id="h-areas" class="visually-hidden" tabindex="-1">Parking map</h2>
+      <p id="areas-summary" class="visually-hidden"></p>
+      <div class="home-map map-stage">
+        <div id="parking-map" class="parking-map" tabindex="0" role="region" aria-label="BYU and downtown Provo parking map" aria-describedby="map-note"></div>
+        <p id="map-status" class="map-status" role="status">Loading campus boundaries…</p>
+        <a href="#find" class="permit-chip" id="permit-chip" aria-label="Change permit or time">
+          <span class="chip-code" id="chip-code" aria-hidden="true">P</span>
+          <span id="chip-text">Choose permit</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 8l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button id="locate-me" type="button" class="location-button map-fab" aria-pressed="false" disabled>Use my location</button>
+      </div>
+
+      <div class="home-sheet" id="home-sheet" data-state="peek">
+        <button type="button" class="sheet-handle" id="sheet-handle" aria-expanded="false" aria-controls="sheet-body">
+          <span class="sheet-grip" aria-hidden="true"></span>
+          <span class="sheet-title" id="sheet-title">Loading parking…</span>
+          <span class="sheet-action" id="sheet-action">Show list</span>
+        </button>
+        <div class="sheet-body parking-results" id="sheet-body">
+          <details class="fine-print">
+            <summary><span>Always check posted signs.</span><span class="info-i" aria-hidden="true">i</span><span class="visually-hidden">More about this information</span></summary>
+            <div class="fine-print-body">
+              <p id="map-note" class="map-note">BYU sections are filtered by listed permit and time rules. Downtown city records are shown separately and their rules are not verified. Registration, eligibility and open spaces are not verified. Check posted signs.</p>
+              <p class="results-note">BYU lot sections checked Nov 4, 2026. Ordinary stalls; regular fall/winter weekly schedule. Register and activate your vehicle. Check signs for events, finals, holidays and breaks. Availability is unknown.</p>
+              <p class="nearby-note">Only sections matching listed rules for your selected permit and time are included. Check signs.</p>
+              <p class="nearby-note">Distances are straight-line estimates to lot centers. Availability and temporary restrictions are not verified.</p>
+              <p class="location-privacy">Only while this map is open. Your location is not saved to our database.</p>
+              <p class="map-note">Source: <a href="https://www.provo.gov/273/Parking" target="_blank" rel="noopener">Provo City</a> parking facilities map, public lots only, checked 2026-11-05. Outlines are simplified. Spaces and hours are what the city recorded; they are not live counts or verified rules.</p>
+            </div>
+          </details>
+
+          <section class="nearby-panel" aria-labelledby="nearby-heading">
+            <h3 id="nearby-heading">Nearby lots</h3>
+            <p id="arrival-suggestion" class="hint" hidden></p>
+            <p id="location-status" class="location-status" role="status">Use your location to find nearby mapped lots.</p>
+            <div id="nearby-controls" hidden><label for="nearby-permit">Filter matching sections by category</label><select id="nearby-permit"><option value="">All matching categories</option></select></div>
+            <ul id="nearby-list" class="nearby-list"></ul>
+            <p id="nearby-empty" class="nearby-note" hidden></p>
+          </section>
+
+          <h3 id="results-heading" class="sheet-heading" tabindex="-1">Parking for your permit</h3>
+          <div class="list-tools">
+            <div class="list-search">
+              <label for="area-search">Search lots</label>
+              <input type="search" id="area-search" autocomplete="off" placeholder="e.g. 20 or 24Y">
+            </div>
+            <div class="list-sort">
+              <label for="area-sort">Sort</label>
+              <select id="area-sort">
+                <option value="name">Lot number</option>
+                <option value="distance">Nearest to me</option>
+              </select>
+            </div>
+          </div>
+          <p id="areas-count" class="areas-count" role="status" aria-live="polite"></p>
+          <ul id="area-list" class="cards"></ul>
+          <button type="button" id="areas-more" class="secondary areas-more" hidden>Show all</button>
+          <p id="areas-empty" class="empty" role="status" hidden></p>
+
+          <section class="map-options" aria-labelledby="map-options-heading">
+            <h3 id="map-options-heading" class="sheet-heading">Map options</h3>
+            <div class="map-option-buttons">
+              <button id="map-reset" type="button" class="map-reset" disabled><span aria-hidden="true">⌖</span> Reset view</button>
+              <button id="map-downtown" type="button" class="map-reset" disabled>Downtown</button>
+            </div>
+            <p class="key-title">Permit colors</p>
+            <ul id="map-legend" class="map-legend" aria-label="Parking boundary colors"></ul>
+            <label class="check city-toggle"><input type="checkbox" id="city-toggle" checked disabled> <span class="legend-dot city-dot" aria-hidden="true"></span>Show downtown Provo lots (city records, rules not verified)</label>
+            <details class="city-lots">
+              <summary>Downtown Provo lots and garages (<span id="city-lot-count">0</span>)</summary>
+              <p id="city-status" class="map-note" role="status">Loading Provo City parking records…</p>
+              <ul id="city-lot-list" class="nearby-list"></ul>
+            </details>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 3: Area details — plain-language rules -->
+    <section id="view-area" aria-labelledby="h-area" hidden>
+      <a href="#areas" class="back" id="area-back">← Back to areas</a>
+      <div id="area-detail"></div>
+    </section>
+
+    <!-- Screen 4: Favorites -->
+    <section id="view-favorites" aria-labelledby="h-favorites" hidden>
+      <h2 id="h-favorites" tabindex="-1">Favorites</h2>
+      <ul id="fav-list" class="cards"></ul>
+      <p id="fav-empty" class="empty" hidden>No favorites yet. Tap the heart on a parking area to save it here.</p>
+    </section>
+
+    <!-- Screen 5: My car — parking timer + where I parked -->
+    <section id="view-car" aria-labelledby="h-car" hidden>
+      <h2 id="h-car" tabindex="-1">My car</h2>
+      <p class="summary"><a href="parking-timer.html" class="link">View a timer saved on this device</a> · <a href="parking-setup.html" class="link">Set up a local parking session</a></p>
+      <div id="car-guest" class="panel car-guest" hidden>
+        <h3>Start a parking timer</h3>
+        <p class="hint">Create a free account to start a timer, get a reminder before your time runs out, and save where you parked. Your timer stays on any device you sign in on.</p>
+        <button type="button" class="primary" id="car-signup">Create a free account</button>
+      </div>
+      <div id="car-active" hidden></div>
+      <form id="car-form" class="panel" hidden>
+        <label for="car-area">Where are you parking?</label>
+        <select id="car-area"></select>
+        <label for="car-destination">Destination building</label>
+        <select id="car-destination" required></select>
+
+        <div class="row">
+          <div>
+            <label for="car-minutes">How long?</label>
+            <select id="car-minutes">
+              <option value="30">30 minutes</option>
+              <option value="60">1 hour</option>
+              <option value="120">2 hours</option>
+              <option value="180">3 hours</option>
+              <option value="240" selected>4 hours</option>
+              <option value="480">8 hours</option>
+            </select>
+          </div>
+          <div>
+            <label for="car-reminder">Remind me</label>
+            <select id="car-reminder">
+              <option value="5">5 min before</option>
+              <option value="10" selected>10 min before</option>
+              <option value="15">15 min before</option>
+              <option value="30">30 min before</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="car-note">Where is your car? (optional)</label>
+        <input type="text" id="car-note" maxlength="200" placeholder="e.g. Row C near the stairs">
+        <p id="car-warning" class="hint warn" hidden></p>
+        <button type="submit" class="primary">Start parking timer</button>
+        <p class="hint">Reminders show on this page while it is open. The app does not send notifications.</p>
+      </form>
+    </section>
+
+    <!-- Screen 6 tab: Help — BYU permits, how to read results, Provo rules, citations -->
+    <section id="view-help" aria-labelledby="h-help" hidden>
+      <h2 id="h-help" tabindex="-1">Help</h2>
+      <div class="panel help">
+        <h3 id="help-permits">Which BYU permit parks where</h3>
+        <p class="hint">Your permit is valid only in the lot letters listed. Every other lettered lot can get you a ticket during enforcement hours.</p>
+        <div class="table-wrap">
+          <table class="permit-table" aria-describedby="help-permits">
+            <thead><tr><th scope="col">Permit</th><th scope="col">Who it is for</th><th scope="col">Valid in</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Y</th><td>Undergraduates (not Helaman Halls, Heritage Halls or Riviera residents)</td><td>Y, U</td></tr>
+              <tr><th scope="row">G</th><td>Graduate students</td><td>G, Y, U</td></tr>
+              <tr><th scope="row">A</th><td>Faculty, staff and administrative employees (not student employees)</td><td>A, C, G, Y, U</td></tr>
+              <tr><th scope="row">B</th><td>Heritage Halls residents</td><td>B, U (overnight only in B and lot 45BCD)</td></tr>
+              <tr><th scope="row">C</th><td>Helaman Halls residents</td><td>C, U (overnight only in C and lot 45BCD)</td></tr>
+              <tr><th scope="row">D</th><td>Riviera residents</td><td>D, U (overnight only in D and lot 45BCD)</td></tr>
+              <tr><th scope="row">YM</th><td>Wymount Terrace and Foreign Language residents</td><td>YM, Y, U</td></tr>
+              <tr><th scope="row">YV</th><td>Wyview Park residents</td><td>YV, Y, U</td></tr>
+              <tr><th scope="row">U</th><td>Affiliated university personnel</td><td>U</td></tr>
+              <tr><th scope="row">V</th><td>Visitors</td><td>Visitor lots 2V and 26V, visitor time stalls</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li><strong>No parking 1:00–5:00 a.m.</strong> in campus lots, except on-campus housing and BYU-owned vehicles under BYU policy.</li>
+          <li><strong>Students and employees may not use visitor parking</strong>, even for a short stop.</li>
+          <li>Time-limited stalls follow the posted signs; the limit ends when enforcement ends for the rest of that lot.</li>
+          <li>Y and G permits cost $60 a semester (free in spring and summer). B, C and D cost $25 a month. A and U are free. YM and YV are in the housing contract.</li>
+          <li>BYU parking citations can be appealed within <strong>14 calendar days</strong> of the citation date.</li>
+        </ul>
+        <p class="hint"><a href="https://security.byu.edu/parking-regulations" target="_blank" rel="noopener">BYU Parking Regulations</a> (released July 23, 2026) · checked 2026-11-05</p>
+
+        <h3>How to read the Areas page</h3>
+        <ul>
+          <li><strong>Matches listed rules</strong> means the permit and time you picked fit the rules BYU publishes for that lot section. It does not mean a space is open.</li>
+          <li><strong>Map colors</strong> show the lot category (student, employee, visitor and so on), not availability.</li>
+          <li><strong>Downtown Provo lots</strong> come from Provo City's parking map. Their hours and limits are what the city recorded, not checked by us, so read the posted signs.</li>
+          <li><strong>Posted signs win.</strong> Events, finals, holidays and construction can change the rules.</li>
+        </ul>
+
+        <h3>Downtown Provo</h3>
+        <ul>
+          <li>Use garages for stays longer than two hours.</li>
+          <li>Enforcement works around the clock.</li>
+          <li>A car on a city street must move at least 400 feet every 72 hours.</li>
+        </ul>
+        <p class="hint"><a href="https://www.provo.gov/273/Parking" target="_blank" rel="noopener">Provo Parking</a> · checked 2026-11-05</p>
+
+        <h3>If you get a Provo citation</h3>
+        <ul>
+          <li>Respond within <strong>5 business days</strong>.</li>
+          <li>No late fees while an appeal filed in time is pending.</li>
+          <li>If the appeal is denied, pay within <strong>7 days</strong> of the decision to avoid late fees.</li>
+        </ul>
+        <p class="hint"><a href="https://www.provo.gov/213/Pay-Parking-Citations" target="_blank" rel="noopener">Pay Parking Citations</a> · checked 2026-10-07</p>
+
+        <h3>About this app</h3>
+        <p class="hint">Results compare the permit you pick with official map rules; BYU registration and eligibility are not verified. Capacity, live availability and tow contacts are unknown. Rules can change, so confirm with the source links before relying on them.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="app-footer" hidden>
+    <p class="sample-note">BYU lot sections checked against official sources. No live space counts. Posted signs and temporary restrictions take priority.</p>
+  </footer>
+
+  <script src="https://parkermorris11.github.io/ProvoParking/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

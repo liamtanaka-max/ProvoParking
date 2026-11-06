@@ -1,0 +1,1204 @@
+{
+ "type": "FeatureCollection",
+ "source": {
+  "name": "Provo City GIS, Provo_Parking_Facilities layer (features marked Public)",
+  "url": "https://services2.arcgis.com/u1JcjHKiYxDeQU3C/arcgis/rest/services/Provo_Parking_Facilities/FeatureServer/0",
+  "info_url": "https://www.provo.gov/273/Parking",
+  "checked_on": "2026-11-05",
+  "note": "Facility outlines, space counts, hours and notes are as recorded by Provo City (edited 2018-2023). Rules and hours are not verified by this app. Shapes simplified to about 10 m."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.6656,
+       40.23248
+      ],
+      [
+       -111.66631,
+       40.23248
+      ],
+      [
+       -111.66633,
+       40.23279
+      ],
+      [
+       -111.66651,
+       40.23289
+      ],
+      [
+       -111.66559,
+       40.23301
+      ],
+      [
+       -111.6656,
+       40.23248
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 186,
+    "name": "City and Covey Center Parking",
+    "kind": "lot",
+    "structure_type": "Surface Parking",
+    "spaces": 51,
+    "recorded_hours": "6am-2am",
+    "notes": "11 parking spots have a 2 hour time restriction",
+    "city_edited_on": "2023-03-20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66332,
+       40.23501
+      ],
+      [
+       -111.66344,
+       40.23471
+      ],
+      [
+       -111.66378,
+       40.23472
+      ],
+      [
+       -111.66371,
+       40.23501
+      ],
+      [
+       -111.66332,
+       40.23501
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 23,
+    "name": "Convention Center and Taylor Brothers",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 36,
+    "recorded_hours": null,
+    "notes": "20 public spaces 6pm-12am Mon-Fri, 6am-12am Sat-Sun",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66382,
+       40.23634
+      ],
+      [
+       -111.66306,
+       40.23636
+      ],
+      [
+       -111.66303,
+       40.23581
+      ],
+      [
+       -111.66381,
+       40.2358
+      ],
+      [
+       -111.66382,
+       40.23634
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 32,
+    "name": "District Court Parking Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 223,
+    "recorded_hours": "6pm-2am Mon-Fri; 6am-2am Sat, Sun",
+    "notes": "110 public spaces on the top deck.",
+    "city_edited_on": "2022-11-17"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66381,
+       40.23578
+      ],
+      [
+       -111.66306,
+       40.23579
+      ],
+      [
+       -111.66307,
+       40.23526
+      ],
+      [
+       -111.66381,
+       40.23527
+      ],
+      [
+       -111.66381,
+       40.23578
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 33,
+    "name": "District Court Surface Lot",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 55,
+    "recorded_hours": "6pm-2am Mon-Fri; 6am-2am Sat, Sun",
+    "notes": null,
+    "city_edited_on": "2022-11-17"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65987,
+       40.23525
+      ],
+      [
+       -111.65987,
+       40.23564
+      ],
+      [
+       -111.66036,
+       40.23569
+      ],
+      [
+       -111.65964,
+       40.23569
+      ],
+      [
+       -111.65964,
+       40.23525
+      ],
+      [
+       -111.65987,
+       40.23525
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 111,
+    "name": "Federal Building",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 40,
+    "recorded_hours": null,
+    "notes": "18 public spaces",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66146,
+       40.23634
+      ],
+      [
+       -111.66147,
+       40.23587
+      ],
+      [
+       -111.66212,
+       40.23586
+      ],
+      [
+       -111.66211,
+       40.23636
+      ],
+      [
+       -111.66146,
+       40.23634
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 187,
+    "name": "Freedom Commons",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 660,
+    "recorded_hours": "24 hours",
+    "notes": "First 30 min free, $2 per hour, $12 daily rate; UVCC, MTEC and Hyatt Place all use this structure",
+    "city_edited_on": "2022-12-06"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.6609,
+       40.23502
+      ],
+      [
+       -111.66065,
+       40.23502
+      ],
+      [
+       -111.66063,
+       40.23432
+      ],
+      [
+       -111.66101,
+       40.23433
+      ],
+      [
+       -111.6609,
+       40.23502
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 29,
+    "name": "Marriott Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 349,
+    "recorded_hours": "6am-2am",
+    "notes": "117 spaces reserved Mon-Fri 7am-6pm; 120 public spaces all hours",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66197,
+       40.23219
+      ],
+      [
+       -111.66101,
+       40.23219
+      ],
+      [
+       -111.66101,
+       40.23182
+      ],
+      [
+       -111.66197,
+       40.23182
+      ],
+      [
+       -111.66197,
+       40.23219
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 59,
+    "name": "NuSkin Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 369,
+    "recorded_hours": null,
+    "notes": "369 public spaces 5pm-12am M-F, 6am-12am Sat/Sun",
+    "city_edited_on": "2019-08-21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66135,
+       40.23765
+      ],
+      [
+       -111.66136,
+       40.23688
+      ],
+      [
+       -111.66165,
+       40.23689
+      ],
+      [
+       -111.66167,
+       40.23656
+      ],
+      [
+       -111.66207,
+       40.23656
+      ],
+      [
+       -111.66207,
+       40.23766
+      ],
+      [
+       -111.66135,
+       40.23765
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 189,
+    "name": "PEG Development lot",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 186,
+    "recorded_hours": "24 hours a day",
+    "notes": null,
+    "city_edited_on": "2022-12-07"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66036,
+       40.23224
+      ],
+      [
+       -111.65966,
+       40.23223
+      ],
+      [
+       -111.65966,
+       40.23204
+      ],
+      [
+       -111.66036,
+       40.23208
+      ],
+      [
+       -111.66036,
+       40.23224
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 79,
+    "name": "Post Office 1",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 30,
+    "recorded_hours": null,
+    "notes": "Sign states \"15-minute customer parking only\"",
+    "city_edited_on": "2018-12-20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66548,
+       40.23248
+      ],
+      [
+       -111.66554,
+       40.2328
+      ],
+      [
+       -111.66486,
+       40.23285
+      ],
+      [
+       -111.66466,
+       40.23285
+      ],
+      [
+       -111.66475,
+       40.23251
+      ],
+      [
+       -111.66449,
+       40.23251
+      ],
+      [
+       -111.66548,
+       40.23248
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 56,
+    "name": "Provo City Center South",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 82,
+    "recorded_hours": "6am-2am",
+    "notes": "Currently under construction, # of spots may vary each weeki",
+    "city_edited_on": "2023-03-20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66063,
+       40.23766
+      ],
+      [
+       -111.66061,
+       40.23655
+      ],
+      [
+       -111.66167,
+       40.23656
+      ],
+      [
+       -111.66165,
+       40.23689
+      ],
+      [
+       -111.66136,
+       40.23688
+      ],
+      [
+       -111.66135,
+       40.23765
+      ],
+      [
+       -111.66063,
+       40.23766
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 190,
+    "name": "Provo City RDA",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 178,
+    "recorded_hours": "24 hours",
+    "notes": null,
+    "city_edited_on": "2022-12-06"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65821,
+       40.2405
+      ],
+      [
+       -111.6582,
+       40.24071
+      ],
+      [
+       -111.65708,
+       40.2407
+      ],
+      [
+       -111.65708,
+       40.24143
+      ],
+      [
+       -111.6582,
+       40.24143
+      ],
+      [
+       -111.65821,
+       40.24169
+      ],
+      [
+       -111.65699,
+       40.2417
+      ],
+      [
+       -111.65698,
+       40.24053
+      ],
+      [
+       -111.65821,
+       40.2405
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 181,
+    "name": "Provo Library Surface Lots",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 120,
+    "recorded_hours": "Sun-Sat 6am-11pm",
+    "notes": null,
+    "city_edited_on": "2019-01-14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65712,
+       40.24084
+      ],
+      [
+       -111.6575,
+       40.24084
+      ],
+      [
+       -111.65751,
+       40.24138
+      ],
+      [
+       -111.65712,
+       40.24138
+      ],
+      [
+       -111.65712,
+       40.24084
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 182,
+    "name": "Provo Library Underground",
+    "kind": "garage",
+    "structure_type": "Underground Garage",
+    "spaces": 207,
+    "recorded_hours": "Mon-Fri 9am-9pm, Sat 9am-6pm",
+    "notes": null,
+    "city_edited_on": "2019-01-14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66549,
+       40.24058
+      ],
+      [
+       -111.66538,
+       40.24108
+      ],
+      [
+       -111.66331,
+       40.24128
+      ],
+      [
+       -111.66306,
+       40.24208
+      ],
+      [
+       -111.66249,
+       40.24207
+      ],
+      [
+       -111.66242,
+       40.24058
+      ],
+      [
+       -111.66549,
+       40.24058
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 179,
+    "name": "Provo Rec Center",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 517,
+    "recorded_hours": "5am-11pm Sun-Sat",
+    "notes": null,
+    "city_edited_on": "2019-01-14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66373,
+       40.2421
+      ],
+      [
+       -111.6646,
+       40.24223
+      ],
+      [
+       -111.66455,
+       40.24238
+      ],
+      [
+       -111.66368,
+       40.24228
+      ],
+      [
+       -111.66373,
+       40.2421
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 180,
+    "name": "Provo Recreation Center 2",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 50,
+    "recorded_hours": "5am-11pm, Sun-Sat",
+    "notes": null,
+    "city_edited_on": "2019-01-14"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66035,
+       40.23439
+      ],
+      [
+       -111.66035,
+       40.23472
+      ],
+      [
+       -111.65959,
+       40.23472
+      ],
+      [
+       -111.65959,
+       40.23439
+      ],
+      [
+       -111.66035,
+       40.23439
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 102,
+    "name": "Provo Town Square Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 221,
+    "recorded_hours": "6am-2am",
+    "notes": "62 parking spaces M-F 6am-6pm, 226 spaces all other hours",
+    "city_edited_on": "2021-07-21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66254,
+       40.23156
+      ],
+      [
+       -111.66241,
+       40.23156
+      ],
+      [
+       -111.6624,
+       40.23117
+      ],
+      [
+       -111.66273,
+       40.23116
+      ],
+      [
+       -111.66254,
+       40.23156
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 54,
+    "name": "State Liquor Store",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 18,
+    "recorded_hours": null,
+    "notes": null,
+    "city_edited_on": "2018-12-20"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.66205,
+       40.22411
+      ],
+      [
+       -111.66211,
+       40.22485
+      ],
+      [
+       -111.66045,
+       40.22486
+      ],
+      [
+       -111.66044,
+       40.22517
+      ],
+      [
+       -111.65901,
+       40.22518
+      ],
+      [
+       -111.659,
+       40.2241
+      ],
+      [
+       -111.66205,
+       40.22411
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 183,
+    "name": "UTA Park and Ride 1",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 743,
+    "recorded_hours": null,
+    "notes": null,
+    "city_edited_on": "2019-01-15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65941,
+       40.22371
+      ],
+      [
+       -111.66041,
+       40.2237
+      ],
+      [
+       -111.66043,
+       40.22389
+      ],
+      [
+       -111.65927,
+       40.22389
+      ],
+      [
+       -111.65941,
+       40.22371
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 184,
+    "name": "UTA Park and Ride 2",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 46,
+    "recorded_hours": null,
+    "notes": null,
+    "city_edited_on": "2019-01-15"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.6574,
+       40.23167
+      ],
+      [
+       -111.65739,
+       40.23114
+      ],
+      [
+       -111.65784,
+       40.23114
+      ],
+      [
+       -111.65785,
+       40.23167
+      ],
+      [
+       -111.6574,
+       40.23167
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 193,
+    "name": "Utah County Health and Justice Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 356,
+    "recorded_hours": "Sun - Sat 7am-12am",
+    "notes": null,
+    "city_edited_on": "2022-12-07"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65705,
+       40.23136
+      ],
+      [
+       -111.65705,
+       40.23112
+      ],
+      [
+       -111.65739,
+       40.23111
+      ],
+      [
+       -111.65739,
+       40.23136
+      ],
+      [
+       -111.65705,
+       40.23136
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 191,
+    "name": "Utah County Health and Justice Lot",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 18,
+    "recorded_hours": "7am - 12am",
+    "notes": "Sign reads \"Utah County Parking 2 Hour Limit\" for some spots",
+    "city_edited_on": "2022-12-07"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65704,
+       40.23221
+      ],
+      [
+       -111.65704,
+       40.23151
+      ],
+      [
+       -111.65739,
+       40.2315
+      ],
+      [
+       -111.6574,
+       40.23169
+      ],
+      [
+       -111.65784,
+       40.23169
+      ],
+      [
+       -111.65786,
+       40.23222
+      ],
+      [
+       -111.65704,
+       40.23221
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 192,
+    "name": "Utah County Health and Justice Lot",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 111,
+    "recorded_hours": "7am - 12 am",
+    "notes": "Sign reads \"Utah County Parking 2 Hour Limit\" for some spots",
+    "city_edited_on": "2022-12-07"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65774,
+       40.23275
+      ],
+      [
+       -111.65707,
+       40.23274
+      ],
+      [
+       -111.65706,
+       40.23244
+      ],
+      [
+       -111.65774,
+       40.23244
+      ],
+      [
+       -111.65774,
+       40.23275
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 137,
+    "name": "Utah County Lot 2",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 42,
+    "recorded_hours": "Sun-Sat 7am-12am",
+    "notes": "Sign reads \"Utah County parking, 2 hour limit\"",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65582,
+       40.23317
+      ],
+      [
+       -111.65534,
+       40.23319
+      ],
+      [
+       -111.65534,
+       40.23286
+      ],
+      [
+       -111.65582,
+       40.23285
+      ],
+      [
+       -111.65582,
+       40.23317
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 136,
+    "name": "Utah State Building",
+    "kind": "lot",
+    "structure_type": "Surface Lot",
+    "spaces": 32,
+    "recorded_hours": "Sun-Sat 7am-12am",
+    "notes": "Sign reads \"2 hour public parking only, violators will be booted or towed\"",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65699,
+       40.23279
+      ],
+      [
+       -111.6558,
+       40.2328
+      ],
+      [
+       -111.6558,
+       40.23246
+      ],
+      [
+       -111.65699,
+       40.23247
+      ],
+      [
+       -111.65699,
+       40.23279
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 135,
+    "name": "Utah State/Utah County Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 688,
+    "recorded_hours": "Sun-Sat 7am-12am",
+    "notes": "62 reserved spots",
+    "city_edited_on": "2021-07-21"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65746,
+       40.235
+      ],
+      [
+       -111.65746,
+       40.23433
+      ],
+      [
+       -111.65796,
+       40.23434
+      ],
+      [
+       -111.65795,
+       40.235
+      ],
+      [
+       -111.65746,
+       40.235
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 142,
+    "name": "Wells Fargo Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 509,
+    "recorded_hours": "Sun-Sat 6am-2am",
+    "notes": "412 spaces open to the public",
+    "city_edited_on": "2018-12-26"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -111.65805,
+       40.23631
+      ],
+      [
+       -111.65774,
+       40.23632
+      ],
+      [
+       -111.65782,
+       40.23559
+      ],
+      [
+       -111.65807,
+       40.2356
+      ],
+      [
+       -111.65805,
+       40.23631
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "object_id": 151,
+    "name": "Zions Bank Parking Garage",
+    "kind": "garage",
+    "structure_type": "Parking Garage",
+    "spaces": 323,
+    "recorded_hours": "Sun-Sat 6am-1am",
+    "notes": "323 public spaces Mon-Fri 6pm-2am, Sat-Sun 6am-2am",
+    "city_edited_on": "2019-01-22"
+   }
+  }
+ ]
+}

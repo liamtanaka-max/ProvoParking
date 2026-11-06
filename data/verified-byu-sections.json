@@ -1,0 +1,1022 @@
+[
+  {
+    "object_id": 2,
+    "global_id": "a569fc70-8846-484a-bacf-9fb526fef930",
+    "lot_code": "30G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.245407,
+    "longitude": -111.645888,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 3,
+    "global_id": "48d1df7d-eb6e-4f6b-8f9d-22d80b673d92",
+    "lot_code": "23A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.254307,
+    "longitude": -111.645493,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 5,
+    "global_id": "f7d80847-c46b-46d2-8bc1-9803dcabf3a7",
+    "lot_code": "59Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.243791,
+    "longitude": -111.649072,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 6,
+    "global_id": "b6b9bac4-df31-4a6f-8666-2a27be84f928",
+    "lot_code": "56Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.243813,
+    "longitude": -111.654271,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 11,
+    "global_id": "d4ad5a99-b6df-4cfb-9760-ab55f0f5cb24",
+    "lot_code": "23A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.254705,
+    "longitude": -111.646371,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 12,
+    "global_id": "53f04b9a-2ca2-4aaa-b6b4-aec0f60a4de0",
+    "lot_code": "55A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.245268,
+    "longitude": -111.64083,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 13,
+    "global_id": "9a6f8fb1-ac57-43cd-b2d6-a61b3bdddc5f",
+    "lot_code": "42A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.264013,
+    "longitude": -111.65946,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 21,
+    "global_id": "0525ad1a-8ca1-4d2c-825d-b65840c1096a",
+    "lot_code": "59G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.244109,
+    "longitude": -111.649076,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 22,
+    "global_id": "b340cddf-310c-4099-baee-798ee4143c95",
+    "lot_code": "30A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.245641,
+    "longitude": -111.646045,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 24,
+    "global_id": "9a5ded43-79f3-475c-9bbd-0e15537f376c",
+    "lot_code": "56A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.244117,
+    "longitude": -111.654252,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 25,
+    "global_id": "5b73ce80-cad2-4b53-9db3-66fbab93eb33",
+    "lot_code": "14A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.249035,
+    "longitude": -111.650913,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 26,
+    "global_id": "3b577a4d-74c3-471e-bf10-09aca021f41b",
+    "lot_code": "32A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.244814,
+    "longitude": -111.649298,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 29,
+    "global_id": "2576bc08-22fa-40c6-b933-303c48a909e2",
+    "lot_code": "20A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.256497,
+    "longitude": -111.645572,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 30,
+    "global_id": "8879b4cb-c435-4e39-acdf-6a1b06b2bead",
+    "lot_code": "27A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.249481,
+    "longitude": -111.644154,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 31,
+    "global_id": "4c94c069-7e48-47fb-b458-fa823202d6dc",
+    "lot_code": "27A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.248746,
+    "longitude": -111.645123,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 33,
+    "global_id": "1a4d9fed-a957-4b2f-ad27-1a136695fe47",
+    "lot_code": "26A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.247707,
+    "longitude": -111.644075,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 34,
+    "global_id": "22976fa0-1e2f-4647-8317-c97ebfceebaa",
+    "lot_code": "26G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.248149,
+    "longitude": -111.643433,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 35,
+    "global_id": "2ca9e120-6c3e-411c-bdba-0277a2678ad7",
+    "lot_code": "28A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.24701,
+    "longitude": -111.643952,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 37,
+    "global_id": "ca63df0d-b9c1-4ba8-a762-2434c79b4b76",
+    "lot_code": "26A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.248013,
+    "longitude": -111.644868,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 41,
+    "global_id": "316def31-28bd-4c3a-92f7-722ea7e9a528",
+    "lot_code": "37Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.247823,
+    "longitude": -111.657879,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 44,
+    "global_id": "a3cea0f9-0ab4-495a-92c4-bd4b5c1dc321",
+    "lot_code": "38Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.247414,
+    "longitude": -111.656235,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 45,
+    "global_id": "a4ea0370-7a88-49be-8b5b-1c9616c18d10",
+    "lot_code": "38Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.247289,
+    "longitude": -111.65603,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 46,
+    "global_id": "5c112c36-c99b-40eb-93d9-35d29f5ce077",
+    "lot_code": "53A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.248903,
+    "longitude": -111.642605,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 56,
+    "global_id": "2aed1eef-75ff-4366-a9e1-337c6afc4f3c",
+    "lot_code": "53G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.24868,
+    "longitude": -111.642041,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 58,
+    "global_id": "3a626e4a-4e21-45ee-b6ea-6df2fe0a8b04",
+    "lot_code": "2A",
+    "permit_type": "A",
+    "end": "18:00",
+    "latitude": 40.25118,
+    "longitude": -111.647182,
+    "source_description": "Permit required from 7:00 a.m. to 6:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 59,
+    "global_id": "fe1867cd-15f5-49bd-90d6-d5f40f5df238",
+    "lot_code": "2A",
+    "permit_type": "A",
+    "end": "18:00",
+    "latitude": 40.251647,
+    "longitude": -111.648153,
+    "source_description": "Permit required from 7:00 a.m. to 6:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 61,
+    "global_id": "8ca1c384-72f9-42ec-beaf-150a9f4df601",
+    "lot_code": "8A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.247406,
+    "longitude": -111.645717,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 62,
+    "global_id": "2f4d4183-5006-43cc-9146-f26db39188b1",
+    "lot_code": "22G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.252944,
+    "longitude": -111.647355,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 66,
+    "global_id": "a9cc91df-cf3f-40cd-95e1-9f7a17858804",
+    "lot_code": "15A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.248344,
+    "longitude": -111.652284,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 71,
+    "global_id": "9a1ff93a-19e8-4a7e-a724-04db74d18d87",
+    "lot_code": "3A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.249886,
+    "longitude": -111.646711,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 79,
+    "global_id": "ba45386f-2363-46e6-aa46-257f37562687",
+    "lot_code": "24A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.254983,
+    "longitude": -111.644505,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 81,
+    "global_id": "1491bbb9-89da-4a98-b37f-db7a6d03859a",
+    "lot_code": "22A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.254018,
+    "longitude": -111.647366,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 82,
+    "global_id": "8aba5e5d-7ae0-48b2-8a89-ae1c9c893b42",
+    "lot_code": "8A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.247453,
+    "longitude": -111.644864,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 83,
+    "global_id": "615a5d27-8e0e-488c-8c7f-ceadfa8b7585",
+    "lot_code": "53A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.249466,
+    "longitude": -111.642071,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 85,
+    "global_id": "d6b000b5-38a5-4b46-8d09-b1ccc8c39412",
+    "lot_code": "4A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.247014,
+    "longitude": -111.647098,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 87,
+    "global_id": "e443c5bf-c7b0-416a-8ab7-291e6a3ef638",
+    "lot_code": "53G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.249305,
+    "longitude": -111.641334,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 89,
+    "global_id": "1737e25e-daba-4d45-a305-8d84ed5a66c4",
+    "lot_code": "8A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.247786,
+    "longitude": -111.645203,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 102,
+    "global_id": "1d22c6e7-f84b-4492-9dd7-6e26ff72b2a8",
+    "lot_code": "24A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.256091,
+    "longitude": -111.642982,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 105,
+    "global_id": "a1f5b0dc-93fb-40ca-b973-da12ab036555",
+    "lot_code": "54A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.262881,
+    "longitude": -111.658206,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 114,
+    "global_id": "5d13cfa7-fbb1-4a7f-baa4-5abbd2f62eed",
+    "lot_code": "24A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.256733,
+    "longitude": -111.642208,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 115,
+    "global_id": "aca278ed-6f7e-4e80-bb91-aebf60e33253",
+    "lot_code": "24Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.255602,
+    "longitude": -111.642561,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 117,
+    "global_id": "7260cc0a-d747-42ad-9694-7a98dcaf6de7",
+    "lot_code": "50Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.257979,
+    "longitude": -111.645214,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 118,
+    "global_id": "67142359-d237-46e0-bf93-99ce5cf65536",
+    "lot_code": "50A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.257271,
+    "longitude": -111.64514,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 119,
+    "global_id": "88305d29-a927-4f29-aeec-5a5ad8be4004",
+    "lot_code": "50A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.257496,
+    "longitude": -111.645576,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 120,
+    "global_id": "af1d03d9-1b5d-43a8-b7fd-10f061dffab0",
+    "lot_code": "50A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.257645,
+    "longitude": -111.646802,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 123,
+    "global_id": "d06101a9-ec47-49df-9650-ea02ef117529",
+    "lot_code": "20Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.256076,
+    "longitude": -111.647258,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 125,
+    "global_id": "13816962-ab60-41df-862b-e3da450735f5",
+    "lot_code": "19Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.255636,
+    "longitude": -111.648799,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 126,
+    "global_id": "62f0a860-6eff-4e6f-befe-c5216976f027",
+    "lot_code": "19A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.255546,
+    "longitude": -111.649204,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 127,
+    "global_id": "1d463e73-556d-43ab-a3cb-a0942bc440b0",
+    "lot_code": "19Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.255425,
+    "longitude": -111.649843,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 128,
+    "global_id": "ae40cd5e-728d-49cd-aa0c-c325e05a6c3c",
+    "lot_code": "22G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.252986,
+    "longitude": -111.6495,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 129,
+    "global_id": "6f968b54-34dc-4b12-8a6c-b1ae5b812c38",
+    "lot_code": "31A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.245397,
+    "longitude": -111.64703,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 130,
+    "global_id": "38d757a7-5f9e-4334-9373-1c2fc784a657",
+    "lot_code": "31G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.245288,
+    "longitude": -111.646978,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 132,
+    "global_id": "e64a6ab6-8320-4ba2-a19d-f85ac3d94c6a",
+    "lot_code": "6A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.245632,
+    "longitude": -111.647172,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 134,
+    "global_id": "27d6229c-bb13-441c-816f-edb4e1735c21",
+    "lot_code": "5A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.246184,
+    "longitude": -111.646326,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 135,
+    "global_id": "270621b8-0253-4fa0-9d52-44a792c1c36b",
+    "lot_code": "33A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.2441,
+    "longitude": -111.650753,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 136,
+    "global_id": "bf558fc0-e7ca-4301-b473-f02bddf19761",
+    "lot_code": "33Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.243674,
+    "longitude": -111.651164,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 137,
+    "global_id": "9fbd00c5-3aed-4b7a-adc1-2c378f7f798a",
+    "lot_code": "33G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.24415,
+    "longitude": -111.651191,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 140,
+    "global_id": "17ca2c3f-504e-4bd7-9d36-9894771ea1d4",
+    "lot_code": "7A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.246173,
+    "longitude": -111.649923,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 141,
+    "global_id": "5a997f4d-efef-4246-bf24-ee5d3fe92a35",
+    "lot_code": "12A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.246249,
+    "longitude": -111.653188,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 142,
+    "global_id": "a5038811-0525-4784-bbfd-0d61aa343989",
+    "lot_code": "13A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.246917,
+    "longitude": -111.652191,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 143,
+    "global_id": "cb8e57df-1556-48c9-b6d9-1bd11ee10fc0",
+    "lot_code": "17A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.249792,
+    "longitude": -111.651469,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 145,
+    "global_id": "3592335d-ee8a-4444-9211-bdaa1832049b",
+    "lot_code": "17A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.250103,
+    "longitude": -111.651366,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 146,
+    "global_id": "4d6428bc-cc57-4512-a656-8bef4b882253",
+    "lot_code": "16A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.250751,
+    "longitude": -111.650684,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 147,
+    "global_id": "31cf4855-950d-438c-af16-2cf54fa3e9dc",
+    "lot_code": "1A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.251922,
+    "longitude": -111.648828,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 149,
+    "global_id": "4fef7e39-91a0-491e-96b7-a3b9b554a54e",
+    "lot_code": "16A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.251662,
+    "longitude": -111.650516,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 151,
+    "global_id": "7f2ddcd9-a61b-4220-be6a-11a7dadd5eb4",
+    "lot_code": "57Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.243341,
+    "longitude": -111.656488,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 152,
+    "global_id": "7f44d201-c24f-49ff-b288-21972c33f088",
+    "lot_code": "34Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.244783,
+    "longitude": -111.65566,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 153,
+    "global_id": "698f7f52-ea31-4bfc-8101-cd0b061d3446",
+    "lot_code": "46Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.247325,
+    "longitude": -111.66142,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 154,
+    "global_id": "01dd6eb6-0e12-4a87-8f89-c98463ecd1b0",
+    "lot_code": "46A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.247501,
+    "longitude": -111.660366,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 155,
+    "global_id": "a46ef394-6de9-4ac9-968f-45eda60a8874",
+    "lot_code": "46A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.246829,
+    "longitude": -111.6598,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 156,
+    "global_id": "da465c7c-699d-4002-a034-e5e56ac63992",
+    "lot_code": "36Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.246447,
+    "longitude": -111.656726,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 157,
+    "global_id": "2ead36c2-68bf-4fe0-8496-a1faf1afb141",
+    "lot_code": "37Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.247864,
+    "longitude": -111.656806,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 158,
+    "global_id": "041cf2ae-3ec0-4c24-9a16-234bb8940b1c",
+    "lot_code": "38A",
+    "permit_type": "A",
+    "end": "19:00",
+    "latitude": 40.247866,
+    "longitude": -111.65517,
+    "source_description": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 159,
+    "global_id": "2bb48aec-bf12-43b0-a0c5-935a81e7e279",
+    "lot_code": "37Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.248411,
+    "longitude": -111.657211,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 160,
+    "global_id": "cbe69e91-f030-4aa5-8d24-5f1e86397630",
+    "lot_code": "37A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.248761,
+    "longitude": -111.656151,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 161,
+    "global_id": "c60e1c94-02d9-4f7a-b513-e16e43d6608c",
+    "lot_code": "37Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.249622,
+    "longitude": -111.656332,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 162,
+    "global_id": "63de00d7-cf11-4991-9b48-58fde01f1533",
+    "lot_code": "39A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.249263,
+    "longitude": -111.654328,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 163,
+    "global_id": "8b4cbfaa-f5cb-4e3f-8cc9-988cb095bb83",
+    "lot_code": "39G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.250133,
+    "longitude": -111.65452,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 164,
+    "global_id": "4f2d5966-bd9a-4314-8a56-d6a7207448ff",
+    "lot_code": "40A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.250137,
+    "longitude": -111.652909,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 165,
+    "global_id": "7433d632-d337-43d0-be72-b9d4fcd1b055",
+    "lot_code": "46Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.248379,
+    "longitude": -111.658944,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 166,
+    "global_id": "73f7da6c-8c10-4899-a31a-8cf5fa5a23a1",
+    "lot_code": "46Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.250062,
+    "longitude": -111.659523,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 167,
+    "global_id": "08e3cc70-673d-4ad3-b282-70bbc3570d40",
+    "lot_code": "18U",
+    "permit_type": "U",
+    "end": null,
+    "latitude": 40.2515,
+    "longitude": -111.657362,
+    "source_description": "Parking is free to registered vehicles."
+  },
+  {
+    "object_id": 169,
+    "global_id": "a4221937-3029-4508-9ccb-ff6568aaf54c",
+    "lot_code": "40G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.250666,
+    "longitude": -111.653529,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 170,
+    "global_id": "9da1927e-9307-4831-9d26-89f2479a72d2",
+    "lot_code": "40A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.250899,
+    "longitude": -111.652816,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 171,
+    "global_id": "9695d239-cb1e-42e4-9cae-4ae4f246d443",
+    "lot_code": "40G",
+    "permit_type": "G",
+    "end": "16:00",
+    "latitude": 40.251263,
+    "longitude": -111.65251,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 180,
+    "global_id": "882d82e6-697f-438c-82f5-2d15bee32561",
+    "lot_code": "58Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.252251,
+    "longitude": -111.656793,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 181,
+    "global_id": "ff8d032e-2d24-4719-9849-d131dbb4e0a5",
+    "lot_code": "58A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.252242,
+    "longitude": -111.658141,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 183,
+    "global_id": "82a4897f-9329-4dba-8c23-faf721a2ae8d",
+    "lot_code": "58A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.252827,
+    "longitude": -111.656865,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 184,
+    "global_id": "409aa9b8-d023-4970-84bd-a49e5eb67445",
+    "lot_code": "58A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.253702,
+    "longitude": -111.658123,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 186,
+    "global_id": "8baebc68-8081-4bbf-a409-3f6aca666e0d",
+    "lot_code": "49Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.256139,
+    "longitude": -111.652158,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 187,
+    "global_id": "fe0d4309-596b-478e-b215-a18a9afd97b9",
+    "lot_code": "48Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.256197,
+    "longitude": -111.654622,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 188,
+    "global_id": "b01f1901-311d-469c-a131-6ae44723832e",
+    "lot_code": "45Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.256159,
+    "longitude": -111.657052,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 189,
+    "global_id": "553672cd-1855-4638-9381-119920cec563",
+    "lot_code": "45A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.256531,
+    "longitude": -111.657578,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 191,
+    "global_id": "554c9da4-a690-4b24-8345-a62d73a26608",
+    "lot_code": "45U",
+    "permit_type": "U",
+    "end": null,
+    "latitude": 40.258529,
+    "longitude": -111.6573,
+    "source_description": "Parking is free for registered vehicles."
+  },
+  {
+    "object_id": 192,
+    "global_id": "69614725-fd50-4cc2-a77d-37d8a5a3b832",
+    "lot_code": "45Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.257291,
+    "longitude": -111.658329,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 193,
+    "global_id": "6a9f870b-6735-4560-915d-f4d139ced3ff",
+    "lot_code": "47Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.258165,
+    "longitude": -111.652825,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 194,
+    "global_id": "da2404e3-94e8-49dd-a399-a1536a774729",
+    "lot_code": "62Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.259162,
+    "longitude": -111.654979,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday. No Parking from 1 AM to 5 AM"
+  },
+  {
+    "object_id": 195,
+    "global_id": "9b2eac38-2c60-42f7-9db8-f850fae25298",
+    "lot_code": "44U",
+    "permit_type": "U",
+    "end": null,
+    "latitude": 40.258888,
+    "longitude": -111.660009,
+    "source_description": "Parking is free for registered vehicles."
+  },
+  {
+    "object_id": 196,
+    "global_id": "3cb133f1-8e82-4f9e-89b4-5ab21ac59474",
+    "lot_code": "61Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.265311,
+    "longitude": -111.656377,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 197,
+    "global_id": "4ad64e74-9618-4e46-bc6d-8b9328d250a4",
+    "lot_code": "61Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.263558,
+    "longitude": -111.657392,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 209,
+    "global_id": "dde4a9a4-049b-4765-8035-4df09516f438",
+    "lot_code": "33Y",
+    "permit_type": "Y",
+    "end": "16:00",
+    "latitude": 40.243542,
+    "longitude": -111.650475,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  },
+  {
+    "object_id": 210,
+    "global_id": "0a28681f-9509-4463-b14d-fc6565548d34",
+    "lot_code": "33A",
+    "permit_type": "A",
+    "end": "16:00",
+    "latitude": 40.243244,
+    "longitude": -111.650803,
+    "source_description": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday."
+  }
+]

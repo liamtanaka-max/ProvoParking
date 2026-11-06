@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Authorized administrator dashboard for Provo Parking objectives and key results.">
+  <title>Admin sign in · Provo Parking</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-page">
+  <a class="skip-link" href="#admin-main">Skip to main content</a>
+  <header class="admin-header">
+    <a class="home-link" href="index.html#login">Provo Parking</a>
+    <button id="admin-logout" type="button" class="secondary" hidden>Log out</button>
+  </header>
+  <main id="admin-main" tabindex="-1">
+    <p id="admin-status" class="status" role="status" aria-live="polite">Checking your sign-in…</p>
+    <section id="admin-login" class="admin-login panel" aria-labelledby="admin-login-title">
+      <p class="eyebrow">PROVO PARKING / ADMIN</p>
+      <h1 id="admin-login-title">Admin sign in</h1>
+      <p>See how the app is helping people find parking.</p>
+      <form id="admin-login-form">
+        <label for="admin-username">Admin username</label>
+        <input id="admin-username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required minlength="3" maxlength="32" aria-describedby="admin-username-hint">
+        <p id="admin-username-hint" class="hint">Use the username provided by your project administrator.</p>
+        <label for="admin-password">Password</label>
+        <input id="admin-password" type="password" autocomplete="current-password" required>
+        <button id="admin-submit" type="submit" class="primary" disabled>Sign in</button>
+      </form>
+      <a class="link" href="index.html#login">Back to regular sign in</a>
+    </section>
+    <section id="admin-dashboard" aria-labelledby="admin-title" hidden>
+      <p class="eyebrow">APP EFFECTIVENESS / LIVE DATABASE METRICS</p>
+      <div class="admin-heading"><h1 id="admin-title" tabindex="-1">Parking with less guesswork.</h1><button type="button" class="secondary" id="admin-refresh">Refresh metrics</button></div>
+      <p class="summary">All-time results from signed-up users. Demo data and admin accounts are excluded.</p>
+      <p class="hint" id="admin-updated"></p>
+      <section class="okr-objective" aria-labelledby="objective-one">
+        <p class="eyebrow">OBJECTIVE 1</p><h2 id="objective-one">Get people to use the app and find their favorite spots.</h2>
+        <div class="metric-grid" id="okr-one"></div>
+      </section>
+      <section class="okr-objective" aria-labelledby="objective-two">
+        <p class="eyebrow">OBJECTIVE 2</p><h2 id="objective-two">Reduce user friction in parking.</h2>
+        <div class="metric-grid" id="okr-two"></div>
+      </section>
+      <p class="hint">Updates every 30 seconds while this page is visible. Coverage counts show how many sessions can be measured; missing history is never counted as zero.</p>
+    </section>
+    <dialog id="metric-help" aria-labelledby="metric-help-title" aria-describedby="metric-help-text">
+      <h2 id="metric-help-title"></h2><p id="metric-help-text"></p>
+      <form method="dialog"><button class="secondary" autofocus>Close explanation</button></form>
+    </dialog>
+  </main>
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

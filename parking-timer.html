@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="See your parking time remaining, find your car notes, and end your parking session.">
+  <title>Parking timer · Provo Parking</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="parking-setup parking-timer" id="parking-timer">
+    <a class="back" href="parking-setup.html">← Parking timer setup</a>
+    <h1>Parking timer</h1>
+    <p class="summary" id="timer-storage-note">Your session stays in this browser on this device. Reminders appear only while this page is open; no background notifications are sent.</p>
+    <p class="reminder" id="timer-demo-note" hidden>Sample session only. This demo does not change your saved parking timer.</p>
+    <p class="setup-error" id="timer-error" role="alert" hidden></p>
+    <section class="panel" id="timer-empty" hidden>
+      <h2>No parking session yet</h2>
+      <p>Choose your parking preferences, review them, then confirm to start your timer.</p>
+      <a class="primary" href="parking-setup.html">Set up parking</a>
+      <a class="link" href="parking-timer.html?demo=active">Try a sample session</a>
+    </section>
+    <section id="timer-session" aria-labelledby="timer-state" hidden>
+      <p class="timer-state" id="timer-state"></p>
+      <p class="timer-clock" id="timer-countdown" role="timer" aria-label="Time remaining" aria-live="off"></p>
+      <p class="hint" id="timer-clock-label">Time remaining</p>
+      <p class="reminder" id="timer-notice" role="status" aria-live="polite" hidden></p>
+      <h2 class="timer-location" id="timer-location"></h2>
+      <dl class="timer-details">
+        <div><dt>Elapsed time</dt><dd id="timer-elapsed"></dd></div>
+        <div><dt>Selected duration</dt><dd id="timer-duration"></dd></div>
+        <div><dt>Started</dt><dd id="timer-started"></dd></div>
+        <div><dt>Expires</dt><dd id="timer-expires"></dd></div>
+        <div><dt>Reminder</dt><dd id="timer-reminder"></dd></div>
+        <div id="timer-ended-row" hidden><dt>Ended</dt><dd id="timer-ended"></dd></div>
+      </dl>
+      <div class="timer-notes"><h3>Car location notes</h3><p id="timer-notes"></p></div>
+      <p class="hint">Your planned time does not override posted parking limits. Check the rules at your location.</p>
+      <div class="actions" id="timer-actions">
+        <button type="button" class="primary" id="timer-find">Find My Car</button>
+        <button type="button" class="secondary" id="timer-end">End Parking Session</button>
+        <a class="secondary" id="timer-new" href="parking-setup.html" hidden>Set up another session</a>
+      </div>
+      <p class="status" id="timer-navigation" role="status" hidden></p>
+    </section>
+    <aside class="timer-demo-tools" id="timer-demo-tools" hidden aria-label="Sample session states">
+      <h2>Try a sample state</h2>
+      <div class="actions">
+        <a class="secondary" href="parking-timer.html?demo=active">Time remaining</a>
+        <a class="secondary" href="parking-timer.html?demo=reminder">Reminder due</a>
+        <a class="secondary" href="parking-timer.html?demo=expiring">Expires in 10 seconds</a>
+        <a class="secondary" href="parking-timer.html?demo=expired">Expired</a>
+        <a class="link" href="parking-timer.html">Return to saved timer</a>
+      </div>
+    </aside>
+    <dialog id="timer-end-dialog" aria-labelledby="timer-end-title" aria-describedby="timer-end-description">
+      <h2 id="timer-end-title">End this parking session?</h2>
+      <p id="timer-end-description">Only end the session once you have finished parking. Your timer will stop.</p>
+      <div class="actions">
+        <button type="button" class="secondary" id="timer-cancel-end" autofocus>Keep Parking</button>
+        <button type="button" class="primary" id="timer-confirm-end">Yes, End Session</button>
+      </div>
+    </dialog>
+    <noscript><p>Enable JavaScript to view your parking timer.</p></noscript>
+  </main>
+  <script src="config.js"></script>
+  <script type="module" src="js/parking-timer.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Set up a parking session with a duration, reminder preference, and optional car location notes.">
+  <title>Parking timer setup · Provo Parking</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="parking-setup" id="parking-setup">
+    <a href="index.html#car" class="back">← Back to Provo Parking</a>
+    <h1>Parking timer setup</h1>
+    <p class="summary">Choose your parking time and save a few details for your return.</p>
+    <p class="summary"><a class="link" href="parking-timer.html">View parking timer</a> · Your saved session is available here when you return.</p>
+    <form class="panel setup-form" id="setup-form" novalidate>
+      <div class="setup-field">
+        <label for="setup-location">Where are you parking?</label>
+        <input type="text" id="setup-location" readonly aria-describedby="setup-location-hint">
+        <p class="hint" id="setup-location-hint"></p>
+      </div>
+      <div class="row">
+        <div>
+          <label for="setup-duration">Parking duration</label>
+          <select id="setup-duration" required aria-describedby="setup-duration-hint"></select>
+          <p class="hint" id="setup-duration-hint">30 minutes to 12 hours, in 30-minute steps.</p>
+        </div>
+        <div>
+          <label for="setup-reminder">Reminder preference</label>
+          <select id="setup-reminder" required>
+            <option value="0">No reminder</option>
+            <option value="5">5 minutes before</option>
+            <option value="10" selected>10 minutes before</option>
+            <option value="15">15 minutes before</option>
+            <option value="30">30 minutes before</option>
+          </select>
+          <p class="sr-text" id="setup-reminder-hint" role="status"></p>
+        </div>
+      </div>
+      <p class="hint">Reminders appear on the timer page while it is open. Background notifications are not supported.</p>
+      <div class="setup-field setup-notes">
+        <label for="setup-notes">Car location notes <span class="hint">(optional)</span></label>
+        <input type="text" id="setup-notes" maxlength="200" placeholder="Level 3, Row C, near elevator." aria-describedby="setup-notes-hint">
+        <p class="hint" id="setup-notes-hint">Up to 200 characters to help you find your car.</p>
+      </div>
+      <p id="setup-error" class="setup-error" role="alert" hidden></p>
+      <button type="submit" class="primary">Start Parking Timer</button>
+      <p class="hint">Review your choices on the next screen. Your timer starts only after you confirm.</p>
+    </form>
+    <section class="panel setup-confirmation" id="setup-confirmation" aria-labelledby="setup-confirmation-title" hidden>
+      <h2 id="setup-confirmation-title" tabindex="-1">Review your parking session</h2>
+      <p class="hint">Check these details, then confirm to start your timer. The session is saved only in this browser on this device.</p>
+      <dl id="setup-summary"></dl>
+      <p id="setup-confirm-error" class="setup-error" role="alert" hidden></p>
+      <button type="button" class="primary" id="setup-confirm-start" hidden>Confirm &amp; Start Timer</button>
+      <button type="button" class="secondary" id="setup-edit">Edit parking setup</button>
+    </section>
+    <noscript><p>Enable JavaScript to set up a parking session.</p></noscript>
+  </main>
+  <script src="config.js"></script>
+  <script type="module" src="js/parking-setup.js"></script>
+</body>
+</html>

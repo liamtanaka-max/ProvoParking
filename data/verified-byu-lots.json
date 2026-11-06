@@ -1,0 +1,135 @@
+{
+  "verified_on": "2026-11-04",
+  "regulations_url": "https://security.byu.edu/parking-regulations",
+  "regulations_released": "2026-07-23",
+  "regulations_sha256": "bd30b8791168f1d94bf01277eec5255f7bc514b1707bdb28b88a6cbb116dfff6",
+  "map_script": "https://map.byu.edu/scripts/main.js",
+  "layer": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/Campus_Parking_Lots/FeatureServer/0",
+  "lots": [
+    {
+      "lot_code": "59Y",
+      "latitude": 40.243896,
+      "longitude": -111.649081,
+      "geometry_point": "bounding-box center, not an entrance",
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/Campus_Parking_Lots/FeatureServer/0/5",
+      "verified_on": "2026-11-04",
+      "official_properties": {
+        "OBJECTID": 5,
+        "Lot": "59",
+        "permit_typ": "Y",
+        "Lot_Type": "59Y",
+        "Map_Catego": "Students",
+        "Descriptio": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday.",
+        "GlobalID": "f7d80847-c46b-46d2-8bc1-9803dcabf3a7",
+        "Shape__Area": 7873.33984375,
+        "Shape__Length": 482.17394856101333
+      },
+      "allowed_permits": [
+        "A",
+        "G",
+        "Y",
+        "YM",
+        "YV"
+      ],
+      "weekday_permit_start": "07:00",
+      "weekday_permit_end": "16:00",
+      "overnight_block": [
+        "01:00",
+        "05:00"
+      ]
+    },
+    {
+      "lot_code": "30G",
+      "latitude": 40.245261,
+      "longitude": -111.646052,
+      "geometry_point": "bounding-box center, not an entrance",
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/Campus_Parking_Lots/FeatureServer/0/2",
+      "verified_on": "2026-11-04",
+      "official_properties": {
+        "OBJECTID": 2,
+        "Lot": "30",
+        "permit_typ": "G",
+        "Lot_Type": "30G",
+        "Map_Catego": "Graduate Students",
+        "Descriptio": "Permit required from 7:00 a.m. to 4:00 p.m. Monday through Friday.",
+        "GlobalID": "a569fc70-8846-484a-bacf-9fb526fef930",
+        "Shape__Area": 3510.0295580923557,
+        "Shape__Length": 329.9016749793712
+      },
+      "allowed_permits": [
+        "A",
+        "G"
+      ],
+      "weekday_permit_start": "07:00",
+      "weekday_permit_end": "16:00",
+      "overnight_block": [
+        "01:00",
+        "05:00"
+      ]
+    },
+    {
+      "lot_code": "14A",
+      "latitude": 40.249006,
+      "longitude": -111.650913,
+      "geometry_point": "bounding-box center, not an entrance",
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/Campus_Parking_Lots/FeatureServer/0/25",
+      "verified_on": "2026-11-04",
+      "official_properties": {
+        "OBJECTID": 25,
+        "Lot": "14",
+        "permit_typ": "A",
+        "Lot_Type": "14A",
+        "Map_Catego": "Faculty / Staff",
+        "Descriptio": "Permit required from 7:00 a.m. to 7:00 p.m. Monday through Friday.",
+        "GlobalID": "5b73ce80-cad2-4b53-9db3-66fbab93eb33",
+        "Shape__Area": 5292.72265625,
+        "Shape__Length": 433.8787111868155
+      },
+      "allowed_permits": [
+        "A"
+      ],
+      "weekday_permit_start": "07:00",
+      "weekday_permit_end": "19:00",
+      "overnight_block": [
+        "01:00",
+        "05:00"
+      ]
+    },
+    {
+      "lot_code": "18U",
+      "latitude": 40.2513,
+      "longitude": -111.657363,
+      "geometry_point": "bounding-box center, not an entrance",
+      "source_url": "https://services.arcgis.com/FvF9MZKp3JWPrSkg/arcgis/rest/services/Campus_Parking_Lots/FeatureServer/0/167",
+      "verified_on": "2026-11-04",
+      "official_properties": {
+        "OBJECTID": 167,
+        "Lot": "18",
+        "permit_typ": "U",
+        "Lot_Type": "18U",
+        "Map_Catego": "Free Parking",
+        "Descriptio": "Parking is free to registered vehicles.",
+        "GlobalID": "08e3cc70-673d-4ad3-b282-70bbc3570d40",
+        "Shape__Area": 13699.06640625,
+        "Shape__Length": 478.8746923997936
+      },
+      "allowed_permits": [
+        "A",
+        "G",
+        "Y",
+        "U",
+        "B",
+        "C",
+        "D",
+        "YM",
+        "YV"
+      ],
+      "weekday_permit_start": null,
+      "weekday_permit_end": null,
+      "overnight_block": [
+        "01:00",
+        "05:00"
+      ]
+    }
+  ]
+}
