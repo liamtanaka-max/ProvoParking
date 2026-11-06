@@ -21,8 +21,8 @@ export function renderViews() {
 
 export function showView() {
   if (!state.db || !state.areas.length && !state.permits.length) return; // data not loaded yet
-  const [name] = (location.hash.replace(/^#/, "") || (state.find.permitId ? "areas" : "find")).split("/");
-  state.currentView = VIEWS.includes(name) ? name : "find";
+  const [name] = (location.hash.replace(/^#/, "") || "areas").split("/");
+  state.currentView = VIEWS.includes(name) ? name : "areas";
   for (const v of VIEWS) $(`view-${v}`).hidden = v !== state.currentView;
   const tabFor = state.currentView === "area" ? "areas" : state.currentView;
   document.querySelectorAll(".tab").forEach((t) => {
